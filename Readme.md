@@ -26,4 +26,5 @@ An application where teachers and students can register and login. Teachers can 
 ## Note 
 
 Deployment to a live system could not be done due to certain server errors.
+**Please find the screenshots in repository for the reference.**
 
