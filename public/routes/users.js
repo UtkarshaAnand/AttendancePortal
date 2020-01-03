@@ -157,9 +157,9 @@ router.post('/teacherProfile', (req, res) => {
             i += 1;
             students.push(newAttendance);
             newAttendance.save()
-                .then(attendance)
+                /*.then(attendance)
 
-                .catch(err);
+                .catch(err);*/
         }
         res.status(200).json("Record submitted successfully!");
     });
