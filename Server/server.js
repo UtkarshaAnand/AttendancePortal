@@ -1,9 +1,12 @@
+const dotenv = require('dotenv');
 const express = require('express')
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const pug = require('pug');
+
+dotenv.config({path: '../congif.env'})
 
 var {mongoose} = require('./db/config');
 
