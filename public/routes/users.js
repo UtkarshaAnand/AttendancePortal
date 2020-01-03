@@ -44,7 +44,7 @@ router.post('/signup', (req, res) => {
                     password: req.body.password,
                     userType: req.body.userType
                 });
-                console.log(newUser);
+                //console.log(newUser);
 
                 bcrypt.genSalt(10, (err, salt) => {
                     bcrypt.hash(newUser.password, salt, (err, hash) => {
@@ -53,7 +53,7 @@ router.post('/signup', (req, res) => {
                         newUser.save()
                             //.then(user => res.json("Registration Succesfull! Please, login to continue"))
                             .then(user => res.redirect('/login'))
-                            .catch(err => console.log(err));
+                            .catch(err);
                     });
                 });
             }
@@ -157,8 +157,9 @@ router.post('/teacherProfile', (req, res) => {
             i += 1;
             students.push(newAttendance);
             newAttendance.save()
-                .then(attendance => console.log("Attendace Submitted"))
-                .catch(err => console.log(err));
+                .then(attendance)
+
+                .catch(err);
         }
         res.status(200).json("Record submitted successfully!");
     });
