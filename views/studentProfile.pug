@@ -1,0 +1,28 @@
+<html>
+  <head>
+  head
+    block styles
+    link(rel="stylesheet" type="text/css" href="/PageStyle.css")
+    title Student Profile
+  <body>
+    h2 Welcome  
+      span=name
+    <table> 
+    <tr>
+     <th>Date</th>
+     <th>Present/Absent</th>
+    </tr>
+    each record in records
+      <tr>
+        td=record.date
+        td=record.status
+      </tr>  
+    </table>
+    form(action="/logout", method="get")
+      input(
+        class='button'
+        type='submit'
+        value='logout'
+      )  
+  </body>
+</html>

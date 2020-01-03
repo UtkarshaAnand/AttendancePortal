@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+html
+  head
+    block styles
+    meta(charset='utf-8')
+    link(rel="stylesheet" type="text/css" href="/PageStyle.css")    
+    title Teacher Profile
+  body
+    h2 Welcome 
+      span=name
+    form(action='/teacherProfile', method='post')
+      <table> 
+      <tr>
+      <th>Student ID</th>
+      <th>Student Name</th>
+      <th>Present/Absent</th>
+      </tr>
+      each student in users
+        <tr>
+          td=student.Userid
+          td=student.name
+          td
+            <select name='status'>
+              <option value='Present'>Present</option>
+              <option value='Absent'>Absent</option>
+            </select>
+        </tr>  
+      </table>
+      input(
+          class='button'
+          type='submit'
+          value='Submit'
+      )
+      //- each student in users
+      //-   p=student.Userid 
+      //-     span=student.name
+      //-     <select name="status">
+      //-       <option value="Present">Present</option>
+      //-       <option value="Absent">Absent</option>
+      //-     </select>
+      //- input(
+        class='button'
+        type='submit'
+        value='Submit'
+      //-)  
+    form(action="/logout", method="get")
+      input(
+        class='button'
+        type='submit'
+        value='Logout'
+      )

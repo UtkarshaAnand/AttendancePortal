@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/PageStyle.css">
+  </head>
+  <body>
+    <a href="/SignUp" style="font-size: large;">Signup</a>
+    <div class="login-box">
+      <form action="/login" method="POST">
+      <h2>LOGIN</h2>
+      <div class="textbox">
+        <input type="text" placeholder="ID" name="Userid" value="">
+      </div>
+
+      <div class="textbox">
+        <input type="password" placeholder="Password" name="password" value="">
+      </div>
+
+      <div class="radiobutton">
+        <input type="radio" name="userType" value="Student">Student
+        <input type="radio" name="userType" value="Teacher">Teacher<br>
+      </div>
+        <input class="btn" type="submit" name="" value="Login">
+      </form>
+    </div>
+  </body>
+</html>

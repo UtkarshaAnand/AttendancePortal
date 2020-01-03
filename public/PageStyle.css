@@ -1,0 +1,108 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.dashboard-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.dashboard-box h2{
+  float: left;
+  font-size: 40px;
+  border-bottom:  2px solid #000000ed;
+  margin-bottom: 50px;
+  padding: 13px 0
+}
+.login-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.login-box h2{
+  float: left;
+  font-size: 40px;
+  border-bottom:  2px solid #000000ed;
+  margin-bottom: 50px;
+  padding: 13px 0
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #000000ed;
+  border-top: 1px solid #000000ed;
+  border-right: 1px solid #000000ed;
+  border-left: 1px solid #000000ed;
+  border-radius: 10px;
+}
+
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 15px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.btn{
+  width: 50%;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid black;
+  color: black;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 12px 0;
+  margin-top: 15px;
+}
+
+.signup-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.signup-box h2{
+  float: left;
+  font-size: 40px;
+  border-bottom:  2px solid #000000ed;
+  margin-bottom: 50px;
+  padding: 13px 0
+}
+
+table{
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  border-style: solid;
+}
+
+td {
+  border-style: solid;
+  padding: 5px 5px 5px 5px;
+}
+
+th {
+  border-style: solid;
+}
